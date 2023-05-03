@@ -1,0 +1,125 @@
+body{
+  background-color: black;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+#intestazione{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: blueviolet;
+}
+
+#intestazione img{
+  max-width: 100px;
+  max-height: 100px;
+}
+
+body .sfondobox{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+}
+
+.sfondo{
+  width: 85%;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+#center-view{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.title{
+  background-color: blueviolet;
+  margin: 0;
+  font-size: 48px;
+  font-family: 'Indie Flower', cursive;
+  color: whitesmoke;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+#form{
+  display: flex;
+  justify-content: center;
+  background-color: darkgray;
+}
+
+#center-view .carta{
+  margin: 10px;
+  padding: 5px;
+  max-width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+#center-view .campione{
+  margin: 50px;
+  padding: 5px;
+  max-width: 500px;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+#center-view .carta:hover{
+  cursor: pointer;
+  background-color: crimson;
+}
+
+#center-view .campione:hover{
+  cursor: pointer;
+  background-color: crimson;
+}
+
+#center-view img{
+  max-width: 100%;
+  filter: drop-shadow(12px 12px 8px black);
+}
+
+#center-view img:hover{
+  transform: scale(1.25);
+  transition: transform 0.5s;
+}
+
+#center-view .caption{
+  margin-top: 25px;
+  text-align: center;
+  border: 1px solid slategray;
+  background-color: aliceblue;
+}
+
+#modal-view{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-view img{
+  max-width: 100%;
+  max-height: 100%;
+}
+#modal-view.hidden{
+  display: none;
+}
+
+.no-scroll{
+  overflow: hidden;
+}

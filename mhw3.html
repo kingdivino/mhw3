@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Games Streams and Cards Tracker</title>
+    <link rel="stylesheet" href="mhw3.css">
+    <script src="mhw3.js" defer></script>
+  </head>
+
+  <body>
+    <div id="intestazione">
+      <img src="./logo.png">
+      <h1 class="title">Games Streams and Cards Tracker</h1>
+    </div>
+    <section id="form">
+      <form>
+        Inserisci il nome di una carta o di un campione <br>
+        <input type='text' id='carta'>
+        <select name = 'tipo' id="tipo">
+          <option value="hs">HearthStone Cards</option>
+          <option value="yugioh">Yu-Gi-Oh! Cards</option>
+          <option value="lol">League of Legends Champion</option>
+          <option value="twitch">Twitch Streams</option>
+        </select>
+        <input type='submit' id='submit' value='Cerca'>
+      </form>
+    </section>
+    <div class="sfondobox">
+      <div class="sfondo">
+        <section id="center-view"></section>
+        <section id="modal-view" class="hidden"></section>
+      </div>
+    </div>
+  </body>
+
+</html>
